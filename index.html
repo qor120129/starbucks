@@ -27,8 +27,16 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
     integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- swiper -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- ScrollMagic -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
+    integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
   <script defer src="./js/common.js"></script>
   <script defer src="./js/main.js"></script>
 </head>
@@ -40,7 +48,7 @@
       <a href="/" class="logo">
         <img src="./images/starbucks_logo.png" alt="logo">
       </a>
-      <div class="sub-menu">
+      <div class="sub_menu">
         <ul class="menu">
           <li><a href="/signin">Sign In</a></li>
           <li><a href="javascript:void(0)">My Starbucks</a></li>
@@ -52,7 +60,7 @@
           <div class="material-icons">search</div>
         </div>
       </div>
-      <ul class="main-menu">
+      <ul class="main_menu">
         <li class="item">
           <div class="item__name">COFFEE</div>
           <div class="item__contents">
@@ -364,19 +372,19 @@
   <!-- VISUAL -->
   <section class="visual">
     <div class="inner">
-      <div class="title fade-in">
+      <div class="title fade_in">
         <img src="./images/visual_title.png" alt="STARBUCKS DELIGHTFUL START TO THE YEAR">
         <a href="javascript:void(0)" class="btn">자세히 보기</a>
       </div>
-      <div class="fade-in">
+      <div class="fade_in">
         <img src="./images/visual_cup1.png" alt="new OATMAL LATTE" class="cup1 image">
         <img src="./images/visual_cup1_text.png" alt="오트밀 라떼 " class="cup1 text">
       </div>
-      <div class="fade-in">
+      <div class="fade_in">
         <img src="./images/visual_cup2.png" alt="new STARBUCKS CARAMEL CRUMBLE MOCHA" class="cup2 image">
         <img src="./images/visual_cup2_text.png" alt="스타벅스 카라멜 크럼블 라떼 " class="cup2 text">
       </div>
-      <div class="fade-in">
+      <div class="fade_in">
         <img src="./images/visual_spoon.png" alt="spoon" class="spoon">
       </div>
     </div>
@@ -384,9 +392,9 @@
 
   <!-- NOTICE -->
   <section class="notice">
-    <div class="notice-line">
-      <div class="bg-left"></div>
-      <div class="bg-right"></div>
+    <div class="notice_line">
+      <div class="bg_left"></div>
+      <div class="bg_right"></div>
       <div class="inner">
         <div class="inner__left">
           <h2>공지사항</h2>
@@ -398,13 +406,13 @@
               <div class="swiper-slide"><a href="">시스템 개선 및 서비스 점검 안내</a></div>
             </div>
           </div>
-          <a href="javascript:void(0)" class="notice-line__more">
+          <a href="javascript:void(0)" class="notice_line__more">
             <div class="material-icons">add_circle</div>
           </a>
         </div>
         <div class="inner__right">
           <h2>스타벅스 프로모션</h2>
-          <div class="toggle-promotion">
+          <div class="toggle_promotion">
             <div class="material-icons">upload</div>
           </div>
         </div>
@@ -440,11 +448,11 @@
           </div>
         </div>
       </div>
-      <div class="swiper-pagination"></div>
-      <div class="swiper-prev">
+      <div class="swiper_pagination"></div>
+      <div class="swiper_prev">
         <div class="material-icons">arrow_back</div>
       </div>
-      <div class="swiper-next">
+      <div class="swiper_next">
         <div class="material-icons">arrow_forward</div>
       </div>
     </div>
@@ -452,68 +460,95 @@
 
   <!-- REWARDS -->
   <section class="rewards">
-    <div class="bg-left"></div>
-    <div class="bg-right"></div>
+    <div class="bg_left"></div>
+    <div class="bg_right"></div>
     <div class="inner">
-      <div class="btn-group">
-        <div class="btn sing-up btn--reverse">회원가입</div>
-        <div class="btn sing-in">로그인</div>
+      <div class="btn_group">
+        <div class="btn sing_up btn__reverse">회원가입</div>
+        <div class="btn sing_in">로그인</div>
         <div class="btn gift">e-Gift 선물하기</div>
       </div>
     </div>
   </section>
-  <section class="promotion">
+
+  <!-- PROMOTION -->
+  <section class="promotion_coffee scroll_spy">
     <div class="inner">
-      <img src="./images/promotion.png" alt="애니버서리 블렌드 250g" class="promotion_img">
+      <div class="promotion_img ">
+        <img src="./images/promotion.png" alt="애니버서리 블렌드 250g" class="back_to_positoin to_right">
+      </div>
       <div class="promotion_info">
-        <div class="promotion_text">
+        <div class="promotion_text  back_to_positoin to_left">
           가을의 시작을 함께할 <br />
-          <span class="title">애니버서리 블렌드</span> <br />묵직한 바디감과 스파이시한 끝맛이 매력적인 <br />애니버서리 블랜드를 만나보세요.
+          <strong class="title">애니버서리 블렌드</strong> <br />묵직한 바디감과 스파이시한 끝맛이 매력적인 <br />애니버서리 블랜드를 만나보세요.
         </div>
-        <a href="javascript:void(0)" class="btn">자세히 보기</a>
+        <div class="more back_to_positoin to_left">
+          <a href="javascript:void(0)" class="btn">자세히 보기</a>
+        </div>
       </div>
     </div>
   </section>
-  <section class="reserve">
+
+  <!-- RESERVE -->
+  <section class="reserve scroll_spy">
     <div class="inner">
       <div class="reserve_info">
-        <img src="./images/reserve_logo_text.png" alt="">
+        <img src="./images/reserve_logo_text.png" alt="BRAZLA">
         <a href="javascript:void(0)" class="btn">자세히 보기</a>
       </div>
-      <img src="./images/reserve_coffee_bg.png" alt="애니버서리 블렌드 250g" class="reserve_coffee_img">
+      <div class="reserve_coffee_img">
+        <img src="./images/reserve_coffee_bg.png" alt="애니버서리 블렌드 250g" class="back_to_positoin">
+      </div>
     </div>
   </section>
-  <section class="favorite">
+
+  <!-- FAVORITE -->
+  <section class="favorite scroll_spy">
     <div class="inner">
-      <img src="./images/favorite_text1.png" alt="" class="favorite_text1">
-      <img src="./images/favorite_text2.png" alt="" class="favorite_text2">
-      <a href="javascript:void(0)" class="btn favorite_btn">자세히 보기</a>
-      <img src="./images/fav_item.png" alt="" class="favorite_img">
+      <div class="favorite_info">
+        <img src="./images/favorite_text1.png" alt="PICK YOUR FAVORITE"
+          class="favorite_title back_to_positoin to_right">
+        <img src="./images/favorite_text2.png" alt="다양한 메뉴를 스타벅스에서 즐겨보세요"
+          class="favorite_desc back_to_positoin to_right">
+        <div class="more back_to_positoin">
+          <a href="javascript:void(0)" class="btn btn--white">자세히 보기</a>
+        </div>
+      </div>
+      <div>
+        <img src="./images/fav_item.png" alt="" class="favorite_img ">
+      </div>
     </div>
   </section>
-  <section class="reserve_magazine">
+
+  <!-- RESERVE MAGAZINE -->
+  <section class="reserve_magazine scroll_spy">
     <div class="inner">
       <div class="reserve_magazine_info">
-        <img src="./images/reserve_magazine_text.png" alt="reserve magazine 리저브 매거진과 함께 깊어가는 가을을 즐겨보세요." class="reserve_magazine_text">
+        <img src="./images/reserve_magazine_text.png" alt="reserve magazine 리저브 매거진과 함께 깊어가는 가을을 즐겨보세요."
+          class="reserve_magazine_text">
         <a href="javascript:void(0)" class="btn">자세히 보기</a>
       </div>
-      <img src="./images/reserve_magazine.png" alt="reserve magazin" class="reserve_magazine_img">
+      <img src="./images/reserve_magazine.png" alt="reserve magazin" class="reserve_magazine_img back_to_positoin">
     </div>
   </section>
-  <section class="store">
+
+  <!-- STORE -->
+  <section class="store scroll_spy">
     <div class="inner">
-      <img src="./images/store_exp.png" alt="" class="store_exp1">
-      <img src="./images/store_exp2.png" alt="" class="store_exp2">
-      <img src="./images/store_exp3.png" alt="" class="store_exp3">
-      <img src="./images/store_exp4.png" alt="" class="store_exp4">
-      <div class="store_title">전국 어디에서나 <strong>스타벅스와 함께!</strong> <span>스타벅스와 함께 커피 한잔의 여유를 가져보세요.</span></div>      
-      <div class="store_desc">
-        나의 취향이 머무는 곳, 스타벅스 <strong>리저브 매장</strong>
-        더욱 편리하게 스타벅스를 만나보는  <strong>드라이브 스루 매장</strong>
-        함께해서 더 따뜻할수 있는 지역사회 소통 공간 <strong>커뮤니티 스토어</strong>까지
-        <span>다양한 스타벅스 매장이 여러분을 기다립니다.</span>
-      </div>      
-      <a href="javascript:void(0)" class="btn store_btn">매장 찾기</a>
+      <img src="./images/store_exp.png" alt="store image1" class="store_exp1 back_to_positoin">
+      <img src="./images/store_exp2.png" alt="store image2" class="store_exp2 back_to_positoin">
+      <img src="./images/store_exp3.png" alt="store image3" class="store_exp3 back_to_positoin">
+      <img src="./images/store_exp4.png" alt="store image4" class="store_exp4 back_to_positoin">
+      <div class="store_info">
+        <img src="./images/store_txt1.png" alt="전국 어디에서나 스타벅스와 함께! 스타벅스와 함께 커피 한잔의 여유를 가져보세요."
+          class="store_title back_to_positoin to_left">
+        <img src="./images/store_txt2.png"
+          alt="나의 취향이 머무는 곳, 스타벅스 리저브 매장 더욱 편리하게 스타벅스를 만나보는 드라이브 스루 매장 함께해서 더 따뜻할수 있는 지역사회 소통 공간 커뮤니티 스토어까지 다양한 스타벅스 매장이 여러분을 기다립니다."
+          class="store_desc back_to_positoin to_left">
+        <div class="more back_to_positoin to_left">
+          <a href="javascript:void(0)" class="btn store_btn">매장 찾기</a>
+        </div>
+      </div>
     </div>
   </section>
 
