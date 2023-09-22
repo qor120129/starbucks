@@ -421,7 +421,6 @@ header .badge {
 
 .favorite_info {
   display: flex;
-  /* flex-direction: column; */
   width: 360px;
   flex-wrap: wrap;
   justify-content: flex-end;
@@ -431,29 +430,17 @@ header .badge {
 
 .favorite .favorite_info .favorite_title {
   margin-bottom: 40px;
-  /* left: 110px;
-  position: absolute;
-  top: 100px; */
+  transition-delay: 0.3s;
 }
 
 .favorite .favorite_info .favorite_desc {
   margin-bottom: 40px;
+  transition-delay: 0.5s;
 
-  /* left: 0px;
-  top: 350px;
-  position: absolute; */
 }
 
-.favorite .favorite_info .btn--white {
-  /* left: 230px;
-  position: absolute;
-  top: 550px; */
-}
 
-/* .favorite .favorite_btn:hover{
-  color: #333;
-  background-color: #fff;
-} */
+
 .favorite .favorite_img {
   position: absolute;
   width: 912px;
@@ -529,10 +516,19 @@ header .badge {
   top: 100px;
 }
 
+.store .store_info .store_title {
+  transition-delay: 0.3s;
+
+}
 .store .store_info .store_desc {
   margin-top: 20px;
+  transition-delay: 0.5s;
+
 }
 
-.store .store_btn {
+.store .store_info  .more{
   margin-top: 20px;
+  transition-delay: 0.7s;
+
 }
+

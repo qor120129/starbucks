@@ -52,12 +52,12 @@ a {
   color: #fff;
 }
 
-.btn--white {
+.btn__white {
   border: 2px solid #fff;
   color: #fff;
 }
 
-.btn--white:hover {
+.btn__white:hover {
   border: 2px solid #fff;
   color: #333;
   background-color: #fff;
@@ -73,7 +73,7 @@ strong {
   font-weight: 800;
 }
 
-.back_to_positoin{
+.back_to_positoin {
   opacity: 0;
   transition: 1s;
   -webkit-transition: 1s;
@@ -81,21 +81,24 @@ strong {
   -ms-transition: 1s;
   -o-transition: 1s;
 }
-.back_to_positoin.to_right{
+
+.back_to_positoin.to_right {
   transform: translateX(-150px);
   -webkit-transform: translateX(-150px);
   -moz-transform: translateX(-150px);
   -ms-transform: translateX(-150px);
   -o-transform: translateX(-150px);
 }
-.back_to_positoin.to_left{
+
+.back_to_positoin.to_left {
   transform: translateX(150px);
   -webkit-transform: translateX(150px);
   -moz-transform: translateX(150px);
   -ms-transform: translateX(150px);
   -o-transform: translateX(150px);
 }
-.show .back_to_positoin{
+
+.show .back_to_positoin {
   opacity: 1;
   transform: translateX(0);
   -webkit-transform: translateX(0);
@@ -264,8 +267,8 @@ header .main_menu .item .item__contents {
 }
 
 header .main_menu .item:hover .item__contents {
-  visibility: visible;
-  display: block;
+  /* visibility: visible;
+  display: block; */
   transition: 0.4s;
   -webkit-transition: 0.4s;
   -moz-transition: 0.4s;
@@ -275,14 +278,14 @@ header .main_menu .item:hover .item__contents {
 
 header .main_menu .item .item__contents .contents__menu {
   background: #2c2a29;
-  display: none;
   visibility: hidden;
-  /* height: 0; */
-}
+  opacity: 0;
+  }
+
 
 header .main_menu .item:hover .item__contents .contents__menu {
   visibility: visible;
-  display: block;
+  opacity: 1;
   transition: 0.4s;
   -webkit-transition: 0.4s;
   -moz-transition: 0.4s;
@@ -321,7 +324,7 @@ header .main_menu .item .item__contents .contents__menu>ul>li ul li:hover {
 header .main_menu .item .item__contents .contents__texture {
   padding: 26px 0;
   font-size: 12px;
-  display: none;
+  opacity: 0;
   visibility: hidden;
   /* height: 0; */
   background-image: url(../images/main_menu_pattern.jpg);
@@ -333,7 +336,7 @@ header .main_menu .item .item__contents .contents__texture .inner {
 
 header .main_menu .item:hover .item__contents .contents__texture {
   visibility: visible;
-  display: block;
+  opacity: 1;
   transition: 0.4s;
   -webkit-transition: 0.4s;
   -moz-transition: 0.4s;
@@ -350,4 +353,104 @@ header .main_menu .item .item__contents .contents__texture h4 {
 header .main_menu .item .item__contents .contents__texture p {
   color: #669900;
   margin: 4px 0 14px;
+}
+
+
+
+/* FOOTER */
+
+  /* FOOTER footer_menu*/
+
+footer{
+  background-color: #2C2A29;
+}
+footer .inner{
+  width: 1182px;
+}
+footer .footer_menu .footer_menu_wrap{
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  font-size: 12px;
+  padding: 35px 0;
+  flex-wrap: wrap;
+}
+footer .footer_menu .footer_menu_wrap ul li{
+  line-height: 24px;
+}
+footer .footer_menu .footer_menu_wrap ul .footer_menu_ttl{
+  font-size: 14px;
+  line-height: 40px;
+}
+footer .footer_menu .footer_menu_wrap ul li a{
+  color: #fff;
+}
+
+
+/* FOOTER awards*/
+footer .awards {
+  background-color: #282828;
+  padding: 40px 0;
+}
+
+
+footer .awards .swiper {
+  width: 100%;
+  height: 40px;
+}
+
+
+/* FOOTER copyright */
+
+footer .copyright {
+  padding: 40px 0 60px 0;
+}
+
+footer .copyright .inner {
+  width: auto;
+}
+
+footer .copyright .menu {
+  display: flex;
+  justify-content: center;
+}
+
+
+footer .copyright .menu li a {
+  color: #ccc;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 0 10px;
+  display: block;
+  border-right: 1px solid #393939;
+}
+
+footer .copyright .menu li:last-child a {
+  border-right: none;
+}
+
+footer .copyright .menu li a.green {
+  color: #00b050;
+}
+
+footer .copyright .btn_group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin: 20px 0;
+
+}
+
+footer .copyright .footer_info {
+  color: #999;
+  margin: 0 auto;
+  font-size: 12px;
+  text-align: center;
+}
+footer .copyright .footer_info span {
+  padding: 0 5px;
+}
+footer .copyright .footer_info .copyright_text {
+  padding: 15px;
 }

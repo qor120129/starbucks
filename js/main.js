@@ -83,6 +83,17 @@ new Swiper('.notice .promotion .swiper', {
   },
 });
 
+// AWARDS
+new Swiper('.awards .swiper', {
+  // Optional parameters
+  slidesPerView:6,
+  spaceBetween: 20,
+  loop: true,
+  autoplay: {
+    delay: 5000
+  },
+});
+
 
 
 // promotion
@@ -106,7 +117,7 @@ spy.forEach(function(spy) {
   new ScrollMagic
   .Scene ({
     triggerElement: spy,
-    triggerHook: .8
+    triggerHook: .8,
   })
   .setClassToggle(spy, 'show')
   .addTo(new ScrollMagic.Controller())
