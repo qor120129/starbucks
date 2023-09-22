@@ -381,6 +381,7 @@ header .badge {
 .reserve {
   background: url(../images/reserve_bg.jpg) no-repeat center/cover;
   height: 400px;
+  overflow: hidden;
 }
 
 .reserve .reserve_info {
