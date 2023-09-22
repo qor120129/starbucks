@@ -1,7 +1,6 @@
 
 // SCROLL
 const badgesEl = document.querySelector('.badges');
-const mainMenuName = document.querySelectorAll('.main_menu .item');
 // const mainMenuContentsMenu = document.querySelectorAll('.main_menu .contents__menu');
 
 window.addEventListener('scroll', _.throttle(function () {
@@ -20,30 +19,7 @@ window.addEventListener('scroll', _.throttle(function () {
   }
 }, 300));
 
-// Menu hover
 
-for (i = 0; i < mainMenuName.length; i++) {
-  mainMenuName[i].addEventListener('mouseover', function () {
-    mainMenuContentsMenu = this.querySelector('.item__contents')
-
-    contentsMenu = mainMenuContentsMenu.querySelector('.contents__menu');
-    contentsTexture = mainMenuContentsMenu.querySelector('.contents__texture ');
-
-    contentsMenu2 = mainMenuContentsMenu.querySelector('.contents__menu .inner').offsetHeight;
-    contentsTexture2 = mainMenuContentsMenu.querySelector('.contents__texture .inner').offsetHeight;
-
-    console.log('contentsTexture2', contentsTexture2)
-
-    contentsMenu.style.height = contentsMenu2 + 'px'
-    contentsTexture.style.height = contentsTexture2 + 'px'
-
-  })
-  mainMenuName[i].addEventListener('mouseout', function () {
-
-    contentsMenu.style.height = '0'
-    contentsTexture.style.height = '0'
-  })
-}
 
 // 순차적으로 VISUAL
 const fadeEls = document.querySelectorAll('.visual .fade_in');
@@ -83,18 +59,6 @@ new Swiper('.notice .promotion .swiper', {
   },
 });
 
-// AWARDS
-new Swiper('.awards .swiper', {
-  // Optional parameters
-  slidesPerView:6,
-  spaceBetween: 20,
-  loop: true,
-  autoplay: {
-    delay: 5000
-  },
-});
-
-
 
 // promotion
 const promotionEl = document.querySelector('.promotion');
@@ -111,7 +75,6 @@ promotionToggleBtn.addEventListener('click', function () {
 })
 
 // ScrollMagic
-
 const spy = document.querySelectorAll('section.scroll_spy')
 spy.forEach(function(spy) {
   new ScrollMagic
@@ -123,7 +86,3 @@ spy.forEach(function(spy) {
   .addTo(new ScrollMagic.Controller())
 })
 
-
-// YEAR
-const thisYear = document.querySelector('.this_year')
-thisYear.textContent = new Date().getFullYear();
