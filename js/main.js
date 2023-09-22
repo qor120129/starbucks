@@ -1,7 +1,6 @@
 
 // SCROLL
 const badgesEl = document.querySelector('.badges');
-const mainMenuName = document.querySelectorAll('.main_menu .item');
 // const mainMenuContentsMenu = document.querySelectorAll('.main_menu .contents__menu');
 
 window.addEventListener('scroll', _.throttle(function () {

@@ -15,6 +15,8 @@ searchInputEl.addEventListener('blur', function(){
 });
 
 // Menu hover
+const mainMenuName = document.querySelectorAll('.main_menu .item');
+
 for (i = 0; i < mainMenuName.length; i++) {
   mainMenuName[i].addEventListener('mouseover', function () {
     mainMenuContentsMenu = this.querySelector('.item__contents')
