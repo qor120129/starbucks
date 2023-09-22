@@ -122,3 +122,8 @@ spy.forEach(function(spy) {
   .setClassToggle(spy, 'show')
   .addTo(new ScrollMagic.Controller())
 })
+
+
+// YEAR
+const thisYear = document.querySelector('.this_year')
+thisYear.textContent = new Date().getFullYear();
